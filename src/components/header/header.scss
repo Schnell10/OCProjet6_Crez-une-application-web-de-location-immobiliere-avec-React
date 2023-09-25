@@ -1,0 +1,23 @@
+@import '../../styles/_variables.scss';
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 30px 70px 30px 70px;
+
+   ul {
+      list-style-type: none;
+      display: flex;
+      gap: 40px;
+
+      .active {
+         border-bottom: 2px solid $main-color;
+      }
+      a {
+         color: $main-color;
+         text-decoration: none;
+         font-size: 24px;
+      }
+   }
+}
