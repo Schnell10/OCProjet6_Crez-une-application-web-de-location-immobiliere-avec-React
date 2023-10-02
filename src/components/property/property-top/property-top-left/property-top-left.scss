@@ -1,0 +1,54 @@
+@import '../../../../styles/_variables.scss';
+@import '../../../../styles/_mixin.scss';
+
+.property__top__left {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   width: 60%;
+
+   @include mobile() {
+      width: 100%;
+      gap: 15px;
+   }
+
+   h2 {
+      font-size: 30px;
+
+      @include mobile() {
+         font-size: 18px;
+      }
+   }
+
+   h3 {
+      font-size: 18px;
+
+      @include mobile() {
+         font-size: 14px;
+      }
+   }
+
+   &__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+
+      @include mobile() {
+         margin-top: 5px;
+      }
+
+      div {
+         padding: 10px 25px;
+         background-color: $main-color;
+         border-radius: 15px;
+         color: $white-color;
+         font-size: 14px;
+
+         @include mobile() {
+            padding: 8px 20px;
+            font-size: 10px;
+         }
+      }
+   }
+}

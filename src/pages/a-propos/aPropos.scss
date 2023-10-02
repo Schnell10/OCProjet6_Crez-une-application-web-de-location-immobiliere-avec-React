@@ -1,0 +1,32 @@
+@import '../../styles/_mixin.scss';
+
+.main-apropos {
+   margin: 15px 70px 30px 70px;
+
+   @include mobile() {
+      margin: 15px 20px 30px 20px;
+   }
+   &__imgBanner {
+      width: 100%;
+      height: 223px;
+      border-radius: 25px;
+      object-fit: cover;
+      filter: brightness(70%);
+
+      @include mobile() {
+         height: 111px;
+      }
+   }
+   .collapse-a-propos {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      position: relative;
+      margin: 40px 90px 10px 90px;
+
+      @include mobile() {
+         margin: 20px 0;
+         gap: 20px;
+      }
+   }
+}

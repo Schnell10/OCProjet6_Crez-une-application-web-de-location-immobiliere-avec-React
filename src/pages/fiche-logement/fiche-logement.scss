@@ -1,0 +1,10 @@
+@import '../../styles/_mixin.scss';
+
+.main-logement {
+   margin: 0 70px 30px 70px;
+   position: relative;
+
+   @include mobile() {
+      margin: 30px 20px;
+   }
+}

@@ -1,0 +1,28 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixin.scss';
+
+.gallery {
+   margin: 30px 70px;
+   padding: 30px;
+   background-color: $background-cards;
+   border-radius: 25px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
+
+   @include mobile() {
+      margin: 25px 20px;
+      padding: 0;
+      background-color: transparent;
+      grid-template-columns: 1fr;
+   }
+
+   figure {
+      transition: transform 300ms;
+   }
+
+   figure:hover {
+      transform: scale(1.01);
+   }
+}

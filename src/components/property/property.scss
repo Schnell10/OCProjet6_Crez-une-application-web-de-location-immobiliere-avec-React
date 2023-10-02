@@ -1,0 +1,48 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixin.scss';
+
+.property {
+   color: $main-color;
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+
+   @include mobile() {
+      gap: 10px;
+   }
+
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      @include mobile() {
+         margin-top: 15px;
+         justify-content: flex-start;
+         flex-direction: column;
+      }
+   }
+
+   &__bottom {
+      display: flex;
+      gap: 40px;
+
+      @include mobile() {
+         flex-direction: column;
+         gap: 20px;
+      }
+
+      .collapse {
+         position: relative;
+         width: 50%;
+
+         @include mobile() {
+            width: 100%;
+         }
+
+         ul {
+            list-style-type: none;
+         }
+      }
+   }
+}

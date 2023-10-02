@@ -1,12 +1,13 @@
 import React from 'react'
-import Layout from '../../components/layout/Layout'
 import Banner from '../../components/banner/Banner'
+import Gallery from '../../components/gallery/Gallery'
 
 const Home = () => {
    return (
-      <Layout>
+      <div>
          <Banner />
-      </Layout>
+         <Gallery />
+      </div>
    )
 }
 

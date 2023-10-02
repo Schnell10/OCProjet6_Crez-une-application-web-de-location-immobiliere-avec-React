@@ -1,3 +1,9 @@
+# Si vous récupérez le dossier via github utiliser les commandes suivantes dans le terminal pour initialiser le projet
+
+npm install
+
+npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

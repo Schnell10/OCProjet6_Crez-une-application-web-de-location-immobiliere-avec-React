@@ -1,0 +1,44 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixin.scss';
+
+.main-404 {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   gap: 80px;
+   margin: 70px 70px;
+   color: $main-color;
+
+   h2 {
+      font-size: 288px;
+      font-weight: 700;
+
+      @include mobile() {
+         font-size: 96px;
+      }
+   }
+
+   p {
+      font-size: 36px;
+      text-align: center;
+
+      @include mobile() {
+         font-size: 18px;
+         display: flex;
+         flex-direction: column;
+      }
+   }
+
+   a {
+      color: $main-color;
+      text-decoration: none;
+      text-decoration: underline $main-color;
+      font-size: 18px;
+
+      @include mobile() {
+         font-size: 14px;
+         text-align: center;
+      }
+   }
+}

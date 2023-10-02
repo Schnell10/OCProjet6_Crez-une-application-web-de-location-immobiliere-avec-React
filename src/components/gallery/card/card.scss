@@ -1,0 +1,49 @@
+@import '../../../styles/_variables.scss';
+@import '../../../styles/_mixin.scss';
+
+.gallery__card {
+   height: 340px;
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+
+   @include mobile() {
+      height: 255px;
+   }
+
+   &--gradient {
+      width: 100%;
+      height: 100%;
+   }
+
+   &--gradient::after {
+      //pseudo élément after qui permet de faire le dégrader sur l'image
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+         180deg,
+         rgba(0, 0, 0, 0) 33%,
+         rgba(0, 0, 0, 0.7) 100%
+      ); //Utiliser le site https://cssgradient.io/ pour faire le gradient adapté.
+      border-radius: 10px;
+   }
+
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+   }
+
+   h2 {
+      position: absolute;
+      color: $white-color;
+      font-size: 18px;
+      margin: 0 0 20px 20px;
+      width: 50%;
+   }
+}

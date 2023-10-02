@@ -1,0 +1,50 @@
+@import '../../../../styles/_variables.scss';
+@import '../../../../styles/_mixin.scss';
+
+.property__top__right {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   gap: 25px;
+
+   @include mobile() {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+   }
+
+   .property__rating {
+      display: flex;
+      gap: 8px;
+
+      .fa-star {
+         font-size: 24px;
+
+         @include mobile() {
+            font-size: 13px;
+         }
+      }
+      .fa-grey {
+         color: $grey-star;
+      }
+   }
+}
+
+.property__top__host {
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   gap: 8px;
+
+   p {
+      white-space: pre-line;
+   }
+
+   img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+   }
+}

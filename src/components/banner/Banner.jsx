@@ -5,9 +5,10 @@ import './banner.scss'
 const Banner = () => {
    return (
       <div className="banner">
-         <div className="banner__background-img" />
          <img src={imageBanner} alt="paysage de falaises en bord de mer" />
-         <h1>Chez vous, partout et ailleurs</h1>
+         <h2>
+            Chez vous,<span> partout et ailleurs</span>
+         </h2>
       </div>
    )
 }
