@@ -1,4 +1,8 @@
-# Si vous récupérez le dossier via github utiliser les commandes suivantes dans le terminal pour initialiser le projet
+# Si vous récupérez le dossier via github, utilisez les commandes suivantes dans le terminal pour initialiser le projet et l'ouvrir
+
+Placez vous sur le dossier my-app
+
+Puis
 
 npm install
 
