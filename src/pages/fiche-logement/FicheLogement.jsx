@@ -1,17 +1,20 @@
 import React from 'react'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import datas from '../../datas.json'
-import { useLocation } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import './fiche-logement.scss'
 import Property from '../../components/property/Property'
 
 const FicheLogement = () => {
-   const location = useLocation() //useLocation nous permet de récupérer l'url
-   const datasBis = [...datas] //On crée une copie du tableau data
-   const dataLogement = datasBis.filter(
-      //On filtre le tableau pour avoir uniquement les datas du logement cliqué
-      (data) => `/fiche-logement/${data.id}` === `${location.pathname}`,
-   )
+   const { id } = useParams() // Utilisez useParams pour extraire l'ID de l'URL
+
+   const dataLogement = datas.find((data) => data.id === id)
+
+   if (!dataLogement) {
+      //Si dataLogement = false c'est que l'id de notre url correspond à aucun id de logement donc on est redirigé vers la page 404
+      return <Navigate to="/page-404" replace={true} />
+   }
+
    return (
       <div className="main-logement">
          <Slideshow dataLogement={dataLogement} />
