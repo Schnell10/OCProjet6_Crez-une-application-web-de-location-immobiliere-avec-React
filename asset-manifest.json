@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/OCProjet6_Crez-une-application-web-de-location-immobiliere-avec-React/static/css/main.6e8a1a1f.css",
+    "main.js": "/OCProjet6_Crez-une-application-web-de-location-immobiliere-avec-React/static/js/main.18c75a52.js",
+    "static/media/image-banner-a-propos.png": "/OCProjet6_Crez-une-application-web-de-location-immobiliere-avec-React/static/media/image-banner-a-propos.9b95ada7a30d67f2fb6c.png",
+    "static/media/image-banner-home.png": "/OCProjet6_Crez-une-application-web-de-location-immobiliere-avec-React/static/media/image-banner-home.6f8466de99bcc68e61a9.png",
+    "static/media/logo-header.jpg": "/OCProjet6_Crez-une-application-web-de-location-immobiliere-avec-React/static/media/logo-header.5f91a60f94ac1c946cc1.jpg",
+    "index.html": "/OCProjet6_Crez-une-application-web-de-location-immobiliere-avec-React/index.html",
+    "main.6e8a1a1f.css.map": "/OCProjet6_Crez-une-application-web-de-location-immobiliere-avec-React/static/css/main.6e8a1a1f.css.map",
+    "main.18c75a52.js.map": "/OCProjet6_Crez-une-application-web-de-location-immobiliere-avec-React/static/js/main.18c75a52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e8a1a1f.css",
+    "static/js/main.18c75a52.js"
+  ]
+}
