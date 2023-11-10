@@ -13,7 +13,10 @@ const App = () => {
             <Layout>
                <Routes>
                   <Route path="/" element={<Home />} />
-
+                  <Route
+                     path="/OCProjet6_Crez-une-application-web-de-location-immobiliere-avec-React"
+                     element={<Home />}
+                  />
                   <Route
                      path="/fiche-logement/:id"
                      element={<FicheLogement />}
